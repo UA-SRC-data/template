@@ -7,45 +7,26 @@ taxonRank,http://rs.tdwg.org/dwc/terms/verbatimTaxonRank,verbatimOrganism,"The t
 fieldNumber,http://rs.tdwg.org/dwc/iri/fieldNumber,vertebrateTraitObsProc,The number assigned to the field site that links the fieldNotes and the collection event.,string,F-123,,,x,x,x
 decimalLatitude,http://rs.tdwg.org/dwc/terms/decimalLatitude,vertebrateTraitObsProc,The geographic latitude in decimal degrees between -90 and 90.,numerical,45,,suggested (need this or locality),x,x,x
 decimalLongitude,http://rs.tdwg.org/dwc/terms/decimalLongitude,vertebrateTraitObsProc,The geographic longitude in decimal degrees between -180 and 180.,numerical,-110,,suggested (need this or locality),x,x,x
-coordinateUncertaintyInMeters,http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters,vertebrateTraitObsProc,Measured as horizontal distance in meters from the decimalLatidue and decimalLongitude.,numerical,30,,,x,x,x
 verbatimLatitude,http://rs.tdwg.org/dwc/terms/verbatimLatitude,vertebrateTraitObsProc,The latitude as originally recorded.,string,10.11 NAD27,,,x,x,x
 verbatimLongitude,http://rs.tdwg.org/dwc/terms/verbatimLongitude,vertebrateTraitObsProc,The longitude as originally recored.,string, 100.11 NAD27,,,x,x,x
 minimumElevationInMeters,http://rs.tdwg.org/dwc/terms/minimumElevationInMeters,vertebrateTraitObsProc,The lower limit of elevation (above sea level) in meters (same as maximum if it is a single point value).,numerical,200m,,,x,x,x
-maximumElevationInMeters,http://rs.tdwg.org/dwc/terms/maximumElevationInMeters,vertebrateTraitObsProc,The upper limit of elevation (above sea level) in meters (same as minimum if it is a single point value).,numerical,200m,,,x,x,x
-verbatimElevation,http://rs.tdwg.org/dwc/terms/verbatimElevation,vertebrateTraitObsProc,,The original description of elevation.,100-200m,,,x,x,x
 locality,http://rs.tdwg.org/dwc/terms/locality,vertebrateTraitObsProc,The specific description of site.,string,Tecal or Quarry 4,,suggested (need this or lat/long),x,x,x
 verbatimLocality,http://rs.tdwg.org/dwc/terms/verbatimLocality,vertebrateTraitObsProc,The original description of site.,string,3 miles west of Gainesville or underneath of Guatemala City,,,x,x,x
-country,http://rs.tdwg.org/dwc/terms/county,vertebrateTraitObsProc,The country of observation or collection.,string,USA,,,x,x,x
-stateProvince,http://rs.tdwg.org/dwc/terms/stateProvince,vertebrateTraitObsProc,The state of porvince of observation or collection.,string,Montana,,,x,x,x
 verbatimEventDate,http://rs.tdwg.org/dwc/terms/verbatimEventDate,vertebrateTraitObsProc,The original representatino of the date and time of observation or collection.,string,"date of collection event, not of measurement; Jun 1847",,suggested,x,x,x
 yearCollected,urn:yearCollected,vertebrateTraitObsProc,The year the specimen or sample was collected.,integer,1999,,,x,x,x
 eventRemarks,http://rs.tdwg.org/dwc/terms/eventRemarks,vertebrateTraitObsProc,Comments about observation or collection event or additional field notes.,string,collected after heavy rains,,,x,x,x
 waterBody,http://rs.tdwg.org/dwc/terms/waterBody,vertebrateTraitObsProc,The name of the water body in which the Location occurs.,string,,,,x,x,x
-islandGroup,http://rs.tdwg.org/dwc/terms/islandGroup,vertebrateTraitObsProc,The name of the island group in which the Location occurs.,string,,,,x,x,x
-island,http://rs.tdwg.org/dwc/terms/island,vertebrateTraitObsProc,The name of the island on or near which the Location occurs.,string,,,,x,x,x
 samplingProtocol,http://rs.tdwg.org/dwc/iri/samplingProtocol,vertebrateTraitObsProc,"The method/protocol, reference, or URL of MeasurementType.",string,Von Der Dreish 1976,,suggested,x,x,x
-basisOfRecord,http://rs.tdwg.org/dwc/terms/basisOfRecord,vertebrateOrganism,The specific nature of the specimen.,string,,"PreservedSpecimen, FossilSpecimen, LivingSpecimen, HumanObservation, MachineObservation",required,x,x,x
 sex,http://rs.tdwg.org/dwc/terms/sex,vertebrateOrganism,The sex of the individual being measured.,string,,"female, male, hermaphrodite",,x,x,x
-verbatimLifeStage,urn:verbatimLifeStage,vertebrateOrganism,The original description of life stage of individual.,string,young of the year,,,x,x,x
-lifeStage,http://rs.tdwg.org/dwc/terms/lifeStage,vertebrateOrganism,The age class or life stage of the specimen being measured.,string,,"juvenile, subadult, adult, reproductive",suggested,x,x,x
-reproductiveCondition,http://rs.tdwg.org/dwc/terms/reproductiveCondition,vertebrateOrganism,The reproductive condition of the specimen at time of the trait measurement.,string,,"non-reproductive, pregnant",,x,,
-verbatimAgeValue,urn:verbatimAgeValue,vertebrateOrganism,"The numerical value or range indicating how old including the unit such as hours, days, weeks, months, or years the individual is a time of death (paleo and zooarchaeological), collection (neoecological), or observation (non-specimen observations).",string,~2-3 yrs,,,x,,
-ageValue,urn:ageValue,vertebrateOrganism,"A single numerical value indicating how old in hours, days, weeks, months, or years the individual is a time of death (paleo and zooarchaeological), collection (neoecological), or observation (non-specimen observations).",numerical,6,,,x,,
-ageUnit,urn:ageUnit,vertebrateOrganism,"The unit associated with the ageValue in hour, day, week, month, or year.",string,,"hour, day, week, month, year",,x,,
-ageEstimationMethod,urn:ageEstimationMethod,vertebrateOrganism,A free text field for description of method for determining ageValue.,string,counted rings tusk,,,x,,
 measurementType,http://rs.tdwg.org/dwc/terms/measurementType,measurementDatum,The trait and anatomical or physiological feature being measured.,string,,CV from list of traits,required,x,x,x
 measurementValue,http://rs.tdwg.org/dwc/terms/measurementValue,measurementDatum,The numerical value of measurement.,numerical,45,,required,x,x,x
 measurementUnit,http://rs.tdwg.org/dwc/terms/measurementUnit,measurementDatum,The unit associated with the measurementValue.,string,,"mm,cm,m,in,ft,km,g,kg,oz,lb",required,x,x,x
 measurementMethod,http://rs.tdwg.org/dwc/terms/measurementMethod,measurementDatum,"The description, reference, or URL of the method used for measurementType.",string,used calipers for measurementType,,required,x,x,x
-measurementSide,urn:measurementSide,measurementDatum,The side (right or left) of the individual that the measurement was taken.,string,,"left,right",,x,x,x
 measurementDeterminedBy,http://rs.tdwg.org/dwc/terms/measurementDeterminedBy,measurementDatum,"A list (concatenated and separated) of names of people, groups, or organizations who determined the measuremtnValue.",string,MABalk,,suggested,x,x,x
 measurementDeterminedDate,http://rs.tdwg.org/dwc/terms/measurementDeterminedDate,measurementDatum,The date the measurementValue was taken.,string,23/12/10,,suggested if have measurementDeterminedBy,x,x,x
 measurementAccuracy,http://rs.tdwg.org/dwc/terms/measurementAccuracy,measurementDatum,The numerical value of measurement error for the measurementValue of either the instrument or the measurer.,string,10mm,,suggested,x,x,x
 measurementRemarks,http://rs.tdwg.org/dwc/terms/measurementRemarks,measurementDatum,Comments or notes accompanying MeasurementType.,string,75% of epiphysis,,suggested,x,x,x
-materialSampleType,urn:materialSampleType,vertebrateTraitObsProc,The completeness of the materialSample.,string,,"Whole organism, Part organism - whole bone, Part organism - part bone, Part organism - whole skeleton, Part organism - gutted, Part organism - gutted and skinned, Part organism - skinned",suggested,x,x,x
 references,http://purl.org/dc/terms/references,vertebrateTraitObsProc,A related resource that is referenced or otherwise pointed to by the described resource.,string,DOI or Journal of Vertebrate Paleontology citation format,,suggested,x,x,x
-dynamicProperties,http://rs.tdwg.org/dwc/terms/dynamicProperties,vertebrateTraitObsProc,A place for notes related to observation event.,jsons scipt,,,,x,x,x
 datasetName,http://rs.tdwg.org/dwc/terms/datasetName,vertebrateOrganism,The name or an URL to archived dataset or contact for person(s) from which the data was derived.,string,,,,x,x,x
 informationWithheld,http://rs.tdwg.org/dwc/terms/informationWithheld,vertbrateTraitObsProc,A note that more precise or other information does exist but is not provided.,string,"specific locations withheld to protect endangered species, see collection manager for additional detail",,,x,x,x
-occurrenceID,http://rs.tdwg.org/dwc/terms/occurrenceID,vertebrateOrganism,A globally unique identifier that relates to the Occurrence (existence of the organism(s) in a certain place and time).,string,UUID,,,x,x,x
 license,http://purl.org/dc/terms/license,vertebrateTraitObsProc,A legal code depicting the type of licensing for useage of data.,string,,,,x,x,x
